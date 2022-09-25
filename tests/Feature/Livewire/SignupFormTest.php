@@ -50,7 +50,7 @@ class SignupFormTest extends TestCase
             ->set('language', 1)
             ->set('interests', [1, 2])
             ->call('submitForm')
-            ->assertSee('Thank you for submitting your information');
+            ->assertSee('Thank you for submitting your information. Go to at MailHog to view your email');
     }
 
     // form submits and emails
@@ -82,7 +82,7 @@ class SignupFormTest extends TestCase
             ->set('language', 1)
             ->set('interests', [1, 2])
             ->call('submitForm')
-            ->assertSee('Thank you for submitting your information');
+            ->assertSee('Thank you for submitting your information. Go to at MailHog to view your email');
 
 
         Mail::assertSent(function (SignupMailable $mail) {
@@ -122,7 +122,7 @@ class SignupFormTest extends TestCase
             ->set('language', 1)
             ->set('interests', [1, 2])
             ->call('submitForm')
-            ->assertSee('Thank you for submitting your information');
+            ->assertSee('Thank you for submitting your information. Go to at MailHog to view your email');
 
 
         Mail::assertSent(function (SignupMailable $mail) {

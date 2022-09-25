@@ -26,7 +26,7 @@ class SignupForm extends Component
         'surname' => 'required',
         'id_number' => 'required|min:10',
         'mobile' => 'required',
-        'email' => 'required|unique:users',
+        'email' => 'required|email|unique:users',
         'dob' => 'required',
         'language' => 'required',
         'interests' => 'present|required',
@@ -69,7 +69,7 @@ class SignupForm extends Component
 
         $user->save();
 
-        $this->notification = "Thank you for submitting your information";
+        $this->notification = "Thank you for submitting your information. Go to at MailHog to view your email";
 
         $this->resetForm();
     }

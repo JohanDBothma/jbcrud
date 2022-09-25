@@ -7,7 +7,7 @@
     >
         @csrf
         @if ($notification)
-            <div class="rounded-md bg-green-50 p-4">
+            <div class="mt-2 w-96 rounded-md bg-green-50 p-4">
                 <div class="flex">
                     <div class="flex-shrink-0">
                         <svg
@@ -53,7 +53,6 @@
             </div>
         @endif
 
-        {{ $notification }}
         <div class="grid grid-cols-6 gap-6">
             <div class="col-span-6 sm:col-span-3">
                 <x-input-field
