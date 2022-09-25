@@ -32,15 +32,29 @@ I added creation of Mailhog to be part of the setup, so once you run the sail up
 
 I installed this using **[Docker](https://www.docker.com/)** and I used **[Laravel Sail](https://laravel.com/docs/9.x/sail)** to speed up the creation process.
 
-Run composer to install everything: composer install
+### Steps to install on Docker
 
-Run npm to install all packages: npm install
+Copy the repository link and add it to a file via the command git clone https://github.com/JohanDBothma/jbcrud.git
 
-To setup the database and seed it, run this command: php artisan migrate:fresh --seed
+Move to the new directory
 
-Run Laravel Sail to create a Docker Container - ./vendor/bin/sail up
+Run composer to install everything: ```composer install```
 
-This uses Vite so you can either run this system, or make a build, using npm run dev or npm run build respectively
+Run npm to install all packages: ```npm install```
+
+Setup the database, choose ```yes``` when prompted to create a new database. It will create a local SQLite database: ```php artisan migrate```
+
+Seed the datablase with all the needed data run this command ```php artisan db:seed```
+
+Run Laravel Sail to create a Docker Container ```./vendor/bin/sail up```
+
+Install php unit testing ```./vendor/bin/phpunit```
+
+Run a test to ensure everything is passing with ```php artisan test```
+
+This uses Vite so you can either run this system, or make a build, using ```npm run dev``` or ```npm run build``` respectively.
+
+The system should now be available on localhost
 
 ## Laravel Components
 
