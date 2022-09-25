@@ -38,21 +38,21 @@ Copy the repository link and add it to a file via the command git clone https://
 
 Move to the new directory
 
-Run composer to install everything: composer install
+Run composer to install everything: ```composer install```
 
-Run npm to install all packages: npm install
+Run npm to install all packages: ```npm install```
 
-Setup the database, choose yes when prompted to create a new database. It will create a local SQLite database: php artisan migrate
+Setup the database, choose ```yes``` when prompted to create a new database. It will create a local SQLite database: ```php artisan migrate```
 
-Seed the datablase with all the needed data run this command: php artisan db:seed
+Seed the datablase with all the needed data run this command ```php artisan db:seed```
 
-Run Laravel Sail to create a Docker Container - ./vendor/bin/sail up
+Run Laravel Sail to create a Docker Container ```./vendor/bin/sail up```
 
-Install php unit testing ./vendor/bin/phpunit
+Install php unit testing ```./vendor/bin/phpunit```
 
-Run a test to ensure everything is passing with php artisan test
+Run a test to ensure everything is passing with ```php artisan test```
 
-This uses Vite so you can either run this system, or make a build, using npm run dev or npm run build respectively.
+This uses Vite so you can either run this system, or make a build, using ```npm run dev``` or ```npm run build``` respectively.
 
 The system should now be available on localhost
 
