@@ -10,6 +10,19 @@ This system has a signupform on the front page where all fields are required. Ap
 
 On the dashboard, you can view, edit and delete users. You can also navigate to the Languages and Interests sections to add, edit and delete the respective options.
 
+# Recommended use
+
+I recomend to use the system in the following order:
+- Input information into the form
+- View the Mail in MailHog
+- Login to the system. The admin details are prefilled in the email and password fields
+- Search for your user in the Dashboard
+- Edit your user and update your name and any other information.
+- Delete a user
+- Go to the Language section and add a language
+- Go to the Interest section and edit an interest
+- Go back to the form and look if your new language and interest is reflecting
+
 ## TWP
 
 I can expand on this simple little system a lot, but I don't really want to as it is time that I'm going to spend without pay. From here on out, I am going to use the abbreviation **[TWP]** to reference these cases :).
@@ -34,7 +47,7 @@ I installed this using **[Docker](https://www.docker.com/)** and I used **[Larav
 
 ### Steps to install on Docker
 
-Copy the repository link and add it to a file via the command git clone https://github.com/JohanDBothma/jbcrud.git
+Copy the repository link and add it to a file via the command ```git clone https://github.com/JohanDBothma/jbcrud.git```
 
 Move to the new directory
 
@@ -83,7 +96,7 @@ A Livewire component to display all users and gives functionality to interact wi
 - search by name, surname and email
 - sort name, surname and email by ascending or descending
 - persist search query on refresh
-- move pagination not run server side, avoiding full page refreshes.
+- move pagination not run server side, avoiding full page refreshes
 - edit a user
 - delete a user
 
@@ -115,13 +128,9 @@ A Livewire component that utilizes the **[WireElementsModal](https://github.com/
 
 A Livewire component that utilizes the **[WireElementsModal](https://github.com/wire-elements/modal)** to give us a nice edit interest modal. This also gives us a callback for the respective datatable to listen when there are changes, and rerender automatically
 
-### SignupMailable
-
-The mail that is sent on successful signup. The mail will format the languages and interests in human readable data before it sends it off in markdown format, to save time on styling.
-
 ## Testing
 
-General test cases has been added. I did not add test cases for every single function because that would take me a very long time without getting paid :)
+General test cases has been added. I did not add test cases for every single function because **TWP**
 
 To test, run php artisan test
 
@@ -164,20 +173,14 @@ The following 18 cases should succeed
 - **[Laravel Sail](https://laravel.com/docs/9.x/sail)** - For quick setup via Docker
 - **[Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze)** - For minimal authentication features, installing Tailwind and getting Vite up and running.
 - **[SQLite](https://www.sqlite.org/index.html)** - For very light weight database queries and data saving. No need for usernames or passwords.
-
-### Vite
 - **[Vite Livewire](https://github.com/defstudio/vite-livewire-plugin)** - Allows Vite to hot reload blade files
 
-### Styling
+### Styling and Components
 
 - **[TailwindCSS](https://tailwindcss.com/)** - For all my beautiful styling needs.
 - **[TailwindUI](https://tailwindui.com/components)** - Quick Tailwind Templates.
-- **[Blade Heroicons](https://github.com/blade-ui-kit/blade-heroicons)** - For using Heroicons in blade pages that were created by the talented TailwinCSS team.
 - **[Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins)** - For all headings
 - **[Google Fonts - Work Sans](https://fonts.google.com/specimen/Work+Sans)** - For all other text
-
-### Components
-
 - **[WireUI](https://livewire-wireui.com/docs/get-started)**
 - **[WireElementsModal](https://github.com/wire-elements/modal)**
 - **[AplineJS](https://alpinejs.dev/)**
