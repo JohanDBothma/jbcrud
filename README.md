@@ -14,7 +14,6 @@ On the dashboard, you can view, edit and delete users. You can also navigate to 
 
 I can expand on this simple little system a lot, but I don't really want to as it is time that I'm going to spend without pay. From here on out, I am going to use the abbreviation **[TWP]** to reference these cases :).
 
-
 ## Why SQLite?
 
 To ease use the setup up the project on other environments, I decided to use the incredibly light weight library SQLite. The beauty of this libary is that everything works on installation of this project, which includes running the migrations via composer. To access the database via a GUI, I recommend using **[DB Browser for SQLite](https://sqlitebrowser.org/)**.
@@ -25,6 +24,10 @@ I prefer making information that is subject to expansion, to be represented by a
 
 Whenever we want to see the Language or Interest on the user, we use the respective relationship function on the User model to call the name value for it.
 
+## How are emails sent?
+
+I added creation of Mailhog to be part of the setup, so once you run the sail up command, Mailhog would be accessible on port 8025
+
 ## Installation
 
 I installed this using **[Docker](https://www.docker.com/)** and I used **[Laravel Sail](https://laravel.com/docs/9.x/sail)** to speed up the creation process.
@@ -34,6 +37,8 @@ Run composer to install everything: composer install
 Run npm to install all packages: npm install
 
 To setup the database and seed it, run this command: php artisan migrate:fresh --seed
+
+Run Laravel Sail to create a Docker Container - ./vendor/bin/sail up
 
 This uses Vite so you can either run this system, or make a build, using npm run dev or npm run build respectively
 
