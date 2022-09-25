@@ -42,6 +42,12 @@
                         {{ __('Form') }}
                     </x-nav-link>
                     <x-nav-link
+                        href="http://localhost:8025/"
+                        target="_blank"
+                    >
+                        {{ __('MailHog') }}
+                    </x-nav-link>
+                    <x-nav-link
                         :href="route('readme')"
                         :active="request()->routeIs('readme')"
                     >
@@ -139,6 +145,12 @@
                 :active="request()->routeIs('form')"
             >
                 {{ __('Form') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link
+                href="http://localhost:8025/"
+                target="_blank"
+            >
+                {{ __('MailHog') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link
                 :href="route('readme')"
