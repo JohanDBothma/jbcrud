@@ -25,7 +25,7 @@ I recomend to use the system in the following order:
 
 ## TWP
 
-I can expand on this simple little system a lot, but I don't really want to as it is time that I'm going to spend without pay. From here on out, I am going to use the abbreviation **[TWP]** to reference these cases :).
+I can expand on this simple little system a lot, but I don't really want to as it is time that I'm going to spend without pay.
 
 ## Why SQLite?
 
@@ -106,7 +106,7 @@ A Livewire component that utilizes the **[WireElementsModal](https://github.com/
 
 ### DataTablesLanguages
 
-A Livewire component to display all languages and gives the same functionality as the main DataTablesUsers, but this is for languages. Here you can add more languages, edit languages and delete them. I did not set up relationships and prevent foreignkey constraints apon deleting a language that is linked to a user, because **TWP**. 
+A Livewire component to display all languages and gives the same functionality as the main DataTablesUsers, but this is for languages. Here you can add more languages, edit languages and delete them.
 
 ### CreateLanguage
 
@@ -118,7 +118,7 @@ A Livewire component that utilizes the **[WireElementsModal](https://github.com/
 
 ### DataTablesInterests
 
-A Livewire component to display all interests and gives the same functionality as the main DataTablesUsers, but this is for interests. Here you can add more interests, edit interests and delete them. I did not set up relationships and prevent foreignkey constraints apon deleting a language that is linked to a user, because **TWP**. 
+A Livewire component to display all interests and gives the same functionality as the main DataTablesUsers, but this is for interests. Here you can add more interests, edit interests and delete them.
 
 ### CreateInterest
 
@@ -130,7 +130,7 @@ A Livewire component that utilizes the **[WireElementsModal](https://github.com/
 
 ## Testing
 
-General test cases has been added. I did not add test cases for every single function because **TWP**
+General test cases has been added.
 
 To test, run php artisan test
 
